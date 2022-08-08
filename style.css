@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+    height: 1000px;
+    background-image: url(./image/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-bar {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.nav-bar img {
+    max-width: 200px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 500px;
+}
+
+.menu div {
+    width: 20%;
+    color: white;
+    font-size: 20px;
+}
+
+.welcome {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome .greeting {
+    font-size: 30px;
+    font-style: italic;
+    font: italic "Fira Sans", serif;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.welcome .thank {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.welcome button {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(199, 199, 5);
+    color: white;
+    border: none;
+}
+
+.service {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.service-title {
+    margin-top: 30px;
+}
+
+.services {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service-title .detail {
+    font-size: 15px;
+    font-style: italic;
+    font: italic "Fira Sans", serif;
+    margin-bottom: 30px;
+}
+
+.service-badge {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-badge1 {
+    display: flex;
+    height: 200px;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-badge1 .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(190, 223, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-badge1 .logo i{
+    font-size: 30px;
+    color: white;
+}
+
+.service-badge1 .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-badge1 .detail {
+    font-size: 16px;
+}
+
+.portfolio {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.portfolio-title {
+    margin-top: 30px;
+}
+
+.port {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.portfolio-title .detail {
+    font-size: 15px;
+    font-style: italic;
+    font: italic "Fira Sans", serif;
+    margin-bottom: 30px;
+}
+
+
+.port-grid {
+    display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: center;
+}
+
+
+
+.item {
+    display: block;
+    height: 350px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+
+.item img {
+    max-width: 300px;
+}
+
+.item .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.item .detail {
+    font-size: 16px;
+}
+
+.team {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.team-title {
+    margin-top: 30px;
+}
+
+.team-title .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.team-title .detail {
+    font-size: 15px;
+    font-style: italic;
+    font: italic "Fira Sans", serif;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.member {
+    display: flex;
+    height: 200px;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member .member-image {
+    width: 100px;
+    height: 100px;
+}
+
+
+.member img {
+    max-width: 100px;
+    border-radius: 50%;
+    
+}
+
+.member .member-image img{
+    border: 1px solid gray;
+}
+
+.member .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.member .detail {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.descrip {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+@media  (max-width: 768px) {
+    header {
+        background-image: url(./image/header-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+        height: 500px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .service {
+        height: 1000px;
+    }
+
+    .service-badge {
+        flex-direction: column;
+    }
+
+    .welcome .greeting {
+        font-size: 10px;
+        font-style: italic;
+        font: italic "Fira Sans", serif;
+        color: white;
+        margin-bottom: 30px;
+    }
+    
+    .welcome .thank {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 80px;
+    }
+
+    .service-badge1 {
+        height: 250px;
+        width: 80%;
+    }
+
+    .portfolio {
+        height: 2500px;
+    }
+
+    .port-grid {
+        grid-template-columns: auto;
+    }
+
+    .team {
+        height: 1200px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 30%;
+        height: 300px;
+    }
+
+    .descrip {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and  (min-width: 768px) and (max-width:1024px) {
+    header {
+        background-image: url(./image/header-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+        height: 600px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .welcome .greeting {
+        font-size: 10px;
+        font-style: italic;
+        font: italic "Fira Sans", serif;
+        color: white;
+        margin-bottom: 30px;
+    }
+    
+    .welcome .thank {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 80px;
+    }
+
+    .portfolio {
+        height: 1500px;
+    }
+
+    .port-grid {
+        grid-template-columns: auto auto;
+    }
+
+    .team {
+        height: 1200px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 30%;
+        height: 300px;
+    }
+
+    .footer {
+        width: 80%;
+    }
+
+}
+
